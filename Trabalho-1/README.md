@@ -3,7 +3,7 @@
 A atividade tem como finalidade a implementação de três funções PutPixel, DrawLine, DrawTriangle, para realizar a rasterição de 
 pontos e linhas em um framework que simula uma memória de vídeo.
 
-//imagem0
+![Triangulos](/Trabalho-1/Images/Triangulos.png)
 
 ## PutPixel
 
