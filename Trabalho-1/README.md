@@ -15,11 +15,11 @@ variando entre 0 e IMAGE_WIDTH em ambas as coordenadas e também a sua cor no fo
 através da formula (x*4 + y*4*IMAGE_WIDTH), cada um deles é multiplicado por 4 por causa da quantidade de bytes por pixel e o y 
 é multiplicado por IMAGE_WIDTH para fazer com q ele desça uma linha inteira, da seguinte forma :
 
-//imagem1
+![PutPixel](/Trabalho-1/Images/PutPixel.png)
 
 E esse foi o resultado:
 
-//imagem2
+![Pixels](/Trabalho-1/Images/Pixels.png)
 ```c++
 for(int i = 0; i < IMAGE_WIDTH; i += 5){
 		PutPixel(i, i, color(255, 255, 255, 255));
@@ -46,7 +46,10 @@ coordenadas, fazendo-o funcionar para todos os oito octantes.
 3º- Finalmente, eu utilizei o booleans salvos para saber se eu deveria decrementar ou incrementar a coordenada y e se eu deveria
     inverter a coordenada x de votla para o y e vice-versa na hora de usar a função PutPixel.
     
- //imagem4 e imagem5
+Condições:
+ ![Condições](/Trabalho-1/Images/Condicoes.png) 
+Booleans:
+ ![Booleans](/Trabalho-1/Images/Booleans.png)
 
 ## Obs.: Interpolação de Cores
 
@@ -54,11 +57,12 @@ Dentro do código da função DrawLine eu implementei um código para interpolar
 Sendo assim eu calculei a diferença entre o R, G, B e dividi essa diferença pela variação de x, fazendo assim essas variações 
 aumentarem ou diminuirem linearmente com o meu while.
 
-//imagem6
+![Interpolação](/Trabalho-1/Images/Interporlacao.png)
 
 Assim eu consegui fazer linhas interpolando a cor para os oito octantes.
 
-//imagem7
+![Linhas](/Trabalho-1/Images/Linhas.png)
+
 ```c++
   DrawLine(IMAGE_WIDTH/2, IMAGE_WIDTH/2, 0, 0, color(255, 0, 0, 255), color(0, 0, 255, 0));
 	DrawLine(IMAGE_WIDTH/2, IMAGE_WIDTH/2, IMAGE_WIDTH/2, 0, color(255, 0, 0, 255),
@@ -83,7 +87,7 @@ Dentre as três funções essa foi a mais simples, pois só é necessário usar 
 desenhar as linhas entre esses 3 pontos usando a função DrawLine, na qual ja está implementada para os oito octantes e com inter
 polação de cores
 
-//imagem9
+![Triangulo](/Trabalho-1/Images/Triangulo.png)
 ```c++
 DrawTriangle(245, 54, color(255, 0, 0, 255), 231, 450, color(0, 255, 0, 255), 62, 70,
 					color(0, 0, 255, 255));
