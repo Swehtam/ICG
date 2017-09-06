@@ -57,7 +57,7 @@ Dentro do código da função DrawLine eu implementei um código para interpolar
 Sendo assim eu calculei a diferença entre o R, G, B e dividi essa diferença pela variação de x, fazendo assim essas variações 
 aumentarem ou diminuirem linearmente com o meu while.
 
-![Interpolação](/Trabalho-1/Images/Interporlacao.png)
+![Interpolação](/Trabalho-1/Images/Interpolacao.png)
 
 Assim eu consegui fazer linhas interpolando a cor para os oito octantes.
 
@@ -83,9 +83,8 @@ Assim eu consegui fazer linhas interpolando a cor para os oito octantes.
 
 ## DrawTriangle
 
-Dentre as três funções essa foi a mais simples, pois só é necessário usar 3 coordenadas difrentes e 3 cores no parâmetro e então
-desenhar as linhas entre esses 3 pontos usando a função DrawLine, na qual ja está implementada para os oito octantes e com inter
-polação de cores
+Dentre as três funções, essa foi a mais simples, pois só é necessário usar 3 coordenadas difrentes e 3 cores no parâmetro e então
+desenhar as linhas entre esses 3 pontos usando a função DrawLine, na qual ja está implementada para os oito octantes e com interpolação de cores
 
 ![Triangulo](/Trabalho-1/Images/Triangulo.png)
 ```c++
