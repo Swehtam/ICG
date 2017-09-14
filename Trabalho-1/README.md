@@ -91,3 +91,10 @@ desenhar as linhas entre esses 3 pontos usando a função DrawLine, na qual ja e
 DrawTriangle(245, 54, color(255, 0, 0, 255), 231, 450, color(0, 255, 0, 255), 62, 70,
 					color(0, 0, 255, 255));
 ```
+
+## Conclusão
+
+Todas as três funções do trabalho foram implementadas como requisitados. Porém, o unico problema que eu encontrei foi o de generalizar o algoritimo de Bresenham, pois eu tive que pensar em uma forma de deixar o mais simplicado possivel o meu código, ao invés de fazer uma condição diferente para cada octante. 
+A parte da interpolação não foi tão complicada, porém sua variação não estava muito suave, então eu o melhorei mudando o armazenamento das cores de int para float, deixando-a mais suave.
+Ainda assim a interpolação de cores poderia ser melhorada com o intuito de preencher os triângulos geraods.
+Desta forma, foi possível interpolar a suas suavemente,enquanto desenhava linhas em todos os possiveis octantes formando assim triângulos rasterizados.
